@@ -94,7 +94,6 @@ Digite sua opção:
 Digite sua opção:
 ```
 
-
 ## _Screenshot_
 
 ![Tela inicial do programa](tela.PNG.png)
