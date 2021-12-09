@@ -103,7 +103,7 @@ Digite sua opção:
 Baixe o arquivo abaixo.
 Descompacte na pasta desejada.
 
-[🗃 Download do arquivo .zip](dist/Projeto_Calculadora.zip)
+[🗃 Download do arquivo .zip](dist/Projeto_Calculadora.deps.zip)
 
 Exemplo:
 
