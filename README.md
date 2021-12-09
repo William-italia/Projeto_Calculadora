@@ -113,19 +113,19 @@ Digite sua opção:
 
 ## _Screenshot_
 
------colar foto aqui
+![Tela inicial do programa](tela.PNG.png)
 
 ## _Download_
 
 Baixe o arquivo abaixo.
 Descompacte na pasta desejada.
 
-[🗃 Download do arquivo .zip]()
+[🗃 Download do arquivo .zip](dist/Projeto_Calculadora.zip)
 
 Exemplo:
 
 ```
---- comando para executar
+dotnet Projeto_calculadora.dll
 ```
 
 Ou se você estiver no Windows, é possivel dar um duplo-clique no ícone do programa.
