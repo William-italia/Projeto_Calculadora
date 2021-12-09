@@ -656,6 +656,7 @@ namespace Projeto_Calculadora
       }
       catch (FormatException)
       {
+        Console.Clear();
         Console.WriteLine("Número em formato inválido.");
       }
     }
@@ -675,6 +676,7 @@ namespace Projeto_Calculadora
       }
       catch (FormatException)
       {
+        Console.Clear();
         Console.WriteLine("Número em formato inválido.");
       }
     }
@@ -694,6 +696,7 @@ namespace Projeto_Calculadora
       }
       catch (FormatException)
       {
+        Console.Clear();
         Console.WriteLine("Número em formato inválido.");
       }
     }
@@ -733,6 +736,7 @@ namespace Projeto_Calculadora
       }
       catch (FormatException)
       {
+        Console.Clear();
         Console.WriteLine("Número em formato inválido.");
       }
     }
@@ -775,6 +779,7 @@ namespace Projeto_Calculadora
       }
       catch (FormatException)
       {
+        Console.Clear();
         Console.WriteLine("Número em formato inválido.");
       }
     }
@@ -797,6 +802,7 @@ namespace Projeto_Calculadora
       }
       catch (FormatException)
       {
+        Console.Clear();
         Console.WriteLine("Número em formato inválido.");
       }
     }
@@ -860,6 +866,7 @@ namespace Projeto_Calculadora
       }
       catch (FormatException)
       {
+        Console.Clear();
         Console.WriteLine("Número em formato inválido.");
       }
 
@@ -881,6 +888,7 @@ namespace Projeto_Calculadora
       }
       catch (FormatException)
       {
+        Console.Clear();
         Console.WriteLine("Número em formato inválido.");
       }
     }
@@ -917,6 +925,7 @@ namespace Projeto_Calculadora
 
       catch (FormatException)
       {
+        Console.Clear();
         Console.WriteLine("Numero em formato invalido");
       }
     }
