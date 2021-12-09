@@ -74,6 +74,7 @@ namespace Projeto_Calculadora
 
 
 
+
       static void menuCREDITOS()
       {
         string menuCREDITOS =
@@ -638,10 +639,13 @@ namespace Projeto_Calculadora
 
 
 
+    }
 
-
-      static void efetuasoma()
+    static void efetuasoma()
+    {
+      try
       {
+
         Console.Clear();
         Console.WriteLine("- - -          SOMA          - - -");
         Console.Write("\nDigite um numero: ");
@@ -650,9 +654,17 @@ namespace Projeto_Calculadora
         double numeroDois = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine($"\nResulado:\n{numeroUm} + {numeroDois} = {numeroUm + numeroDois}");
       }
-
-      static void efetuasubtracao()
+      catch (FormatException)
       {
+        Console.WriteLine("Número em formato inválido.");
+      }
+    }
+
+    static void efetuasubtracao()
+    {
+      try
+      {
+
         Console.Clear();
         Console.WriteLine("- - -          SUBTRAÇÃO          - - -");
         Console.Write("\nDigite um numero: ");
@@ -661,9 +673,17 @@ namespace Projeto_Calculadora
         double numeroDoisSub = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine($"\nResultado de {numeroUmSub} - {numeroDoisSub} = {numeroUmSub - numeroDoisSub}");
       }
-
-      static void efetuamultiplicacao()
+      catch (FormatException)
       {
+        Console.WriteLine("Número em formato inválido.");
+      }
+    }
+
+    static void efetuamultiplicacao()
+    {
+      try
+      {
+
         Console.Clear();
         Console.WriteLine("- - -          MULTIPLICAÇÃO          - - -");
         Console.Write("\nDigite um numero: ");
@@ -672,9 +692,17 @@ namespace Projeto_Calculadora
         double numeroDoisMUL = Convert.ToDouble(Console.ReadLine());
         Console.WriteLine($"\nResultado de {numeroUmMUL} * {numeroDoisMUL} = {numeroUmMUL * numeroDoisMUL}");
       }
-
-      static void efetuadivisao()
+      catch (FormatException)
       {
+        Console.WriteLine("Número em formato inválido.");
+      }
+    }
+
+    static void efetuadivisao()
+    {
+      try
+      {
+
         int Numerador, Denominador;
 
         //Receba um numerador e um denominador. Exiba o resultado da divisão ou "Não é possível dividir por zero.", conforme o caso.
@@ -702,12 +730,18 @@ namespace Projeto_Calculadora
         {
           Console.WriteLine($"\n{Numerador} dividido por {Denominador} é {Numerador / Denominador}");
         }
-
-
       }
-
-      static void efetuaequacao2()
+      catch (FormatException)
       {
+        Console.WriteLine("Número em formato inválido.");
+      }
+    }
+
+    static void efetuaequacao2()
+    {
+      try
+      {
+
         Console.Clear();
         double a, b, c, delta, x1, x2;
 
@@ -739,9 +773,17 @@ namespace Projeto_Calculadora
           Console.WriteLine($"x² = {x2:N2}");
         }
       }
-
-      static void efetuaraiz()
+      catch (FormatException)
       {
+        Console.WriteLine("Número em formato inválido.");
+      }
+    }
+
+    static void efetuaraiz()
+    {
+      try
+      {
+
         Console.Clear();
 
 
@@ -753,10 +795,16 @@ namespace Projeto_Calculadora
 
         Console.WriteLine($"\nRaiz quadrada de {Numero} é igual a: {resposta:N2}");
       }
-
-      static void efetuamediaDecimal()
+      catch (FormatException)
       {
+        Console.WriteLine("Número em formato inválido.");
+      }
+    }
 
+    static void efetuamediaDecimal()
+    {
+      try
+      {
         Console.Clear();
 
         int i;
@@ -808,9 +856,19 @@ namespace Projeto_Calculadora
         {
           Console.WriteLine("\nDigite apenas numeros entre 1 e 10, Obrigado!");
         }
+
+      }
+      catch (FormatException)
+      {
+        Console.WriteLine("Número em formato inválido.");
       }
 
-      static void efetuaExponenciação()
+
+    }
+
+    static void efetuaExponenciação()
+    {
+      try
       {
         Console.Clear();
         Console.WriteLine("- - -          potencia          - - -");
@@ -821,31 +879,45 @@ namespace Projeto_Calculadora
         double resultado = Math.Pow(numeroUm, numeroDois);
         Console.WriteLine($"\nResulado: {resultado}");
       }
+      catch (FormatException)
+      {
+        Console.WriteLine("Número em formato inválido.");
+      }
     }
+
 
     static void efetuaHeron()
     {
       Double a, b, c;
-      Console.Clear();
-      Console.WriteLine("- - - Exercicio heron triangulo - - -");
-
-      Console.Write("(a): ");
-      a = double.Parse(Console.ReadLine());
-      Console.Write("(b): ");
-      b = double.Parse(Console.ReadLine());
-      Console.Write("(c): ");
-      c = double.Parse(Console.ReadLine());
-
-      if (!trianguloReal(a, b, c))
+      try
       {
-        Console.WriteLine($"\nNão é um triângulo");
+
+        Console.Clear();
+        Console.WriteLine("- - - Exercicio heron triangulo - - -");
+
+        Console.Write("(a): ");
+        a = double.Parse(Console.ReadLine());
+        Console.Write("(b): ");
+        b = double.Parse(Console.ReadLine());
+        Console.Write("(c): ");
+        c = double.Parse(Console.ReadLine());
+
+        if (!trianguloReal(a, b, c))
+        {
+          Console.WriteLine($"\nNão é um triângulo");
+        }
+        else
+        {
+          string tipo = modelotriangulo(a, b, c);
+          double area = areadotriangulo(a, b, c);
+
+          Console.WriteLine($"\nO triângulo {a}, {b}, {c} é do tipo {tipo} e tem àrea de {area:N2}.");
+        }
       }
-      else
-      {
-        string tipo = modelotriangulo(a, b, c);
-        double area = areadotriangulo(a, b, c);
 
-        Console.WriteLine($"\nO triângulo {a}, {b}, {c} é do tipo {tipo} e tem àrea de {area:N2}.");
+      catch (FormatException)
+      {
+        Console.WriteLine("Numero em formato invalido");
       }
     }
     static bool trianguloReal(double a, double b, double c)
