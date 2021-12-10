@@ -124,4 +124,3 @@ Ou se você estiver no Windows, é possivel dar um duplo-clique no ícone do pro
 - [Prof. Diego Neri](https://github.com/diegoneri)
 - [Prof. Ermogenes](https://github.com/ermogenes)
 - [Dev C#](https://github.com/ermogenes/aulas-programacao-csharp)
-
