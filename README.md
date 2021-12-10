@@ -108,7 +108,7 @@ Digite sua opção:
 Baixe o arquivo abaixo.
 Descompacte na pasta desejada.
 
-[🗃 Download do arquivo .zip](dist/Projeto_Calculadora.ziip)
+[🗃 Download do arquivo .zip](dist/Projeto_Calculadora.zip)
 
 Exemplo:
 
