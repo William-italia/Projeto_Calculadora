@@ -79,18 +79,19 @@ namespace Projeto_Calculadora
       {
         string menuCREDITOS =
 @"
-| ==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-|
-| - - - - - Creditos     - - - - - - - - - - - - - - - - - - - - - - - |  
-|                                                                      |
-| ->> William Itália Nogueira                                          |
-| ->> Site do projeto: https://github.com/William-italia/Calculadora   |
-|                                                                      |
-|  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-| V - Voltar                                                           |      
-|  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-| S - Sair                                                             |
-|  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-| ==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-|
+| ==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=-=-=-=-=-=-=-=-=|
+| - - - - - Creditos    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |  
+|                                                                                       |
+| ->> William Itália Nogueira                                                           |
+| ->> Site do projeto: https://william-italia.github.io/Projeto_Calculadora/            |
+| ->> Site do projeto no github: https://github.com/William-italia/Projeto_Calculadora  |
+|                                                                                       |
+|  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  |
+| V - Voltar                                                                            |      
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+| S - Sair                                                                              |
+| - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+| ==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-==-=-=-=-=-=-=-=-=-=|
 ";
 
         Console.WriteLine(menuCREDITOS);
